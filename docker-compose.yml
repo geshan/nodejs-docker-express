@@ -6,7 +6,7 @@ services:
       target: dev
     volumes:
       - .:/src
-    command: npm start:dev
+    command: npm run start:dev
     ports:
       - "3000:3000"
     environment:
