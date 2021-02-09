@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express with Docker' });
+  res.render('index', { title: 'Express with Docker and Kubevela' });
 });
 
 module.exports = router;
