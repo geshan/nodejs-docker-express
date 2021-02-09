@@ -1,18 +1,8 @@
+createTime: "2021-02-09T13:51:25.723862+11:00"
 name: testapp
-
 services:
-  express-server:
-    image: geshan/nodejs-docker-express:latest
-    build:
-      push:
-        local: kind
-      docker:
-        file: Dockerfile
-        context: .
-    type: webservice
-    cmd: ["node", "bin/www"]
+  node-express:
+    image: geshan/nodejs-docker-express
     port: 3000
-    ingress:
-      domain: testapp.example.com
-      http:
-        "/": 3000
+    type: webservice
+updateTime: "2021-02-09T13:51:25.723863+11:00"

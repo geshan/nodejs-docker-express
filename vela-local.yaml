@@ -1,0 +1,18 @@
+name: testapp
+
+services:
+  express-server:
+    image: geshan/nodejs-docker-express:latest
+    build:
+      push:
+        local: kind
+      docker:
+        file: Dockerfile
+        context: .
+    type: webservice
+    cmd: ["node", "bin/www"]
+    port: 3000
+    ingress:
+      domain: testapp.example.com
+      http:
+        "/": 3000
