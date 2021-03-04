@@ -1,0 +1,11 @@
+---
+application:
+  name: "nodejs-docker-express"
+  project: "nodejs-docker-express"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-nodejs-docker-express"
+  routes:
+  - application_name: "nodejs-docker-express"
+    paths:
+    - "/*"
